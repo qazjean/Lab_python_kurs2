@@ -22,4 +22,5 @@ df['Общая_стоимость'] = df['Цена'] * df['Количество'
 grouped = df.groupby('Товар')['Общая_стоимость'].sum()
 grouped.plot(kind='bar', title='Выручка по товарам', color='pink', edgecolor='black')
 plt.ylabel('Выручка')
+plt.savefig('1.png', dpi=300, bbox_inches='tight')
 plt.show()
