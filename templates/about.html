@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <h1>О нашей компании</h1>
+
+    <div class="about-content">
+        <p>Мы - топ😈</p>
+
+        <h2>Наши возможности</h2>
+        <ul class="features-list">
+            <li>Разработка веб-приложений c помощью  Flask</li>
+            <li>Кокетство </li>
+            <li>Тяга к знаниям (наверное)</li>
+        </ul>
+
+        <h2>Почему выбирают нас</h2>
+        <div class="advantages">
+            <p>Мы правда топ😈</p>
+        </div>
+
+        <h2>Технологии, которые мы используем</h2>
+        <div class="technologies">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>SQLite</span>
+            <span>PostgreSQL</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+        </div>
+
+        <div class="contact-block">
+            <h3>Свяжитесь с нами</h3>
+            <p>Тут будут контакты.</p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="error-container">
+    <div class="error-content">
+        <h1>404 - Страница не найдена:(</h1>
+        <a href="{{ url_for('index') }}" class="btn btn-primary">На главную</a>
+    </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <img src="{{ url_for('static', filename='../static/images/Trauriger Blick eines Mädchens.png') }}"
+                 alt="Пупупу"
+            class="sad-smiley">
+        </div>
+
+</div>
+{% endblock %}
+</body>
+</html>
